@@ -1,0 +1,50 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header customization */
+header {
+    background-color: #1e3a5f !important;
+}
+
+/* Navbar tweaks */
+.navbar {
+    font-weight: bold;
+}
+
+/* Section spacing */
+section {
+    margin-top: 30px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #1e3a5f;
+}
+
+/* Card styling (Discography) */
+.card {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Table override (optional small styling) */
+.table {
+    background-color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1e3a5f;
+}
+
+/* Audio spacing */
+audio {
+    margin-top: 10px;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musician/Band Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Hero Image -->
+<div class="container-fluid p-0">
+    <img src="https://picsum.photos/1200/400?music" class="img-fluid w-100">
+</div>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center p-3">
+    <h1>THE MUSICAL VIBES</h1>
+    <p>Official Band Website</p>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Band</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#concerts">Concerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#discography">Discography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#store">Store</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-4">
+
+<!-- Playlist -->
+<section id="music">
+    <h2 class="text-center">Music Playlist</h2>
+
+    <ul class="list-group w-50 mx-auto">
+        <li class="list-group-item">
+            Song 1
+            <audio controls class="w-100 mt-2">
+                <source src="song.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+
+        <li class="list-group-item">
+            Song 2
+            <audio controls class="w-100 mt-2">
+                <source src="song2.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+    </ul>
+</section>
+
+<hr>
+
+<!-- Concerts -->
+<section id="concerts">
+    <h2 class="text-center">Upcoming Concerts</h2>
+
+    <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>10 May 2026</td>
+                <td>Mumbai</td>
+                <td>City Hall</td>
+            </tr>
+
+            <tr>
+                <td>15 May 2026</td>
+                <td>Pune</td>
+                <td>Arena Ground</td>
+            </tr>
+
+            <tr>
+                <td>20 May 2026</td>
+                <td>Delhi</td>
+                <td>Open Stadium</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<!-- Discography with images -->
+<section id="discography">
+    <h2 class="text-center mb-4">Discography</h2>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://picsum.photos/300?album1" class="card-img-top">
+                <div class="card-body">
+                    <h5>Echoes of Night</h5>
+                    <p>2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://picsum.photos/300?album2" class="card-img-top">
+                <div class="card-body">
+                    <h5>Lost in Melody</h5>
+                    <p>2023</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://picsum.photos/300?album3" class="card-img-top">
+                <div class="card-body">
+                    <h5>Rhythm of Soul</h5>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2 class="text-center">Gallery</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://picsum.photos/300?concert1" class="img-fluid rounded">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://picsum.photos/300?concert2" class="img-fluid rounded">
+        </div>
+
+        <div class="col-md-4">
+            <img src="https://picsum.photos/300?concert3" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- Store -->
+<section id="store">
+    <h2 class="text-center">Merch Store</h2>
+
+    <table class="table table-hover text-center">
+        <thead class="table-primary">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Buy</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Band T-Shirt</td>
+                <td>₹599</td>
+                <td><button class="btn btn-success" onclick="buyItem()">Buy</button></td>
+            </tr>
+
+            <tr>
+                <td>Music Album</td>
+                <td>₹399</td>
+                <td><button class="btn btn-success" onclick="buyItem()">Buy</button></td>
+            </tr>
+
+            <tr>
+                <td>Poster</td>
+                <td>₹199</td>
+                <td><button class="btn btn-success" onclick="buyItem()">Buy</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-4">
+    <p>© 2026 The Musical Vibes | All Rights Reserved</p>
+</footer>
+
+<!-- JS -->
+<script>
+function buyItem() {
+    alert("Item added to cart!");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
